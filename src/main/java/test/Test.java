@@ -33,7 +33,7 @@ public class Test {
         String passwordStr = nonce + dateTimeFormatter.format(now) + username;
         MessageDigest digest = MessageDigest.getInstance(SHA_256);
         byte[] passwordByteArray = digest.digest(passwordStr.getBytes());
-        String passwordBase64 = encoder.encodeToString(passwordStr.getBytes());
+        String passwordBase64 = encoder.encodeToString(passwordByteArray);
         System.out.println(passwordBase64);
     }
 }
