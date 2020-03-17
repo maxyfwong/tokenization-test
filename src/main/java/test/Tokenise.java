@@ -28,7 +28,7 @@ public class Tokenise {
     public static void main(String[] args) throws Exception {
         Tokenise tokenise = new Tokenise();
         String url = new String(
-                "https://172.21.112.5//DpmTokenManagerCoreEngine/tokenmanagerRestful/doTokenization");
+                "https://172.21.112.5/DpmTokenManagerCoreEngine/tokenmanagerRestful/doTokenization");
         String request = new String();
         request = request + "{\"policyName\": \"Email Address\",\"dataList\": {";
         request = request + "\"dataItem\": [{\"identifier\": \"1\", \"inputData\": \"abc@gmail.com\"}]";
